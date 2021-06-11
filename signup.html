@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gridsign.css">
+<body>
+
+    <main>
+        <div class="main-left">
+            <form  id="signupForm">
+    
+                <h2 >Sign Up</h2> <br>
+                <p class="login-text">sign up with your data  <br>
+                    to complete your registration.
+                    </p>  <br>
+                <label for="fname"> Name:</label><br> 
+                <input class="input1" type="text" id="fname" name="fname" value="" placeholder="enter your name"><br> <br>
+                
+
+                <label for="fname"> Email Address:</label><br> 
+                <input class="input1" type="text" id="email" name="fname" value="" placeholder="name@example.com"><br> <br>
+
+                <label for="fname"> Phone Number:</label><br> 
+                <input class="input1" type="text" id="phone" name="fname" value="" placeholder="enter your phone number"><br> <br>
+  
+                <label for="fname"> Password:</label><br>
+                <input type="text" class="input2" id="paswd" name="lname" value="" placeholder="enter your password"><br><br>
+                <input onclick="OnclickFn()" type="submit" class="input3"  id="submit" value="sign up">
+                
+    
+                <p class="forget"> forget password?</p>
+                <button  class="btn2">sign up</button>
+              </form>   
+            
+        </div>
+    
+        <div class="main-right">
+    
+        </div>
+    
+    </main>
+    
+
+    <script src="app.js"></script>
+    <script>
+function OnclickFn(){
+    document.location.href= 'login.html'
+}
+    </script>
+</body>
+</html>

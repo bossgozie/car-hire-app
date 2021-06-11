@@ -1,0 +1,498 @@
+(("undefined" != typeof global ? global : self).webpackJsonp = ("undefined" != typeof global ? global : self).webpackJsonp || []).push([ [ 17, 44 ], {
+    A9Zp: function(e, t, i) {
+        var n = i("6QaK"), r = {
+            "bestyleguide/_avatar": i("1hEZ").template,
+            "lib/_follow/_buttonUserSmall": i("V3Us").template,
+            "bestyleguide/_icons/_appreciate": i("gYk0").template,
+            "bestyleguide/_icons/_views": i("RfDS").template,
+            "bestyleguide/_icons/_followers": i("D35K").template
+        }, o = new n.Template({
+            code: function(e, t, i) {
+                var n = this;
+                return n.b(i = i || ""), n.s(n.f("user", e, t, 1), e, t, 0, 9, 2318, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                    n.b('<div class="rf-mini-profile hide-phone hide-tablet">'), n.b("\n"), n.b("\n" + i), 
+                    n.b('  <div class="rf-mini-profile__user-info-wrap">'), n.b("\n" + i), n.b('    <div class="rf-mini-profile__user-info-container">'), 
+                    n.b("\n" + i), n.b(n.rp("<bestyleguide/_avatar0", e, t, "")), n.b("\n" + i), n.b('      <div class="rf-mini-profile__user-info">'), 
+                    n.b("\n" + i), n.b('        <a target="_blank" href="'), n.b(n.v(n.f("url", e, t, 0))), 
+                    n.b('" class="rf-mini-profile__user-name">'), n.b(n.v(n.f("display_name", e, t, 0))), 
+                    n.b("</a>"), n.b("\n" + i), n.b('        <a target="_blank" href="'), n.b(n.v(n.f("location_link", e, t, 0))), 
+                    n.b('" class="rf-mini-profile__user-location">'), n.s(n.f("city", e, t, 1), e, t, 0, 609, 619, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                        i.b(i.v(i.f("city", e, t, 0))), i.b(", ");
+                    })), e.pop()), n.s(n.f("state", e, t, 1), e, t, 0, 638, 649, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                        i.b(i.v(i.f("state", e, t, 0))), i.b(", ");
+                    })), e.pop()), n.s(n.f("country", e, t, 1), e, t, 0, 671, 682, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                        i.b(i.v(i.f("country", e, t, 0)));
+                    })), e.pop()), n.b("</a>"), n.b("\n" + i), n.b("      </div>"), n.b("\n" + i), n.b("    </div>"), 
+                    n.b("\n" + i), n.b(n.rp("<lib/_follow/_buttonUserSmall1", e, t, "    ")), n.b("  </div>"), 
+                    n.b("\n"), n.b("\n" + i), n.s(n.f("has_latest_projects", e, t, 1), e, t, 0, 797, 1568, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                        n.b('    <div class="rf-mini-profile__projects">'), n.b("\n" + i), n.s(n.f("latest_projects", e, t, 1), e, t, 0, 868, 1534, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                            n.s(n.d(".", e, t, 1), e, t, 0, 883, 1418, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                                n.b('          <a target="_blank" href="'), n.b(n.v(n.f("url", e, t, 0))), n.b('" class="rf-mini-profile__project-image-wrapper js-mini-profile__project-image-wrapper">'), 
+                                n.b("\n" + i), n.s(n.f("cover_srcset", e, t, 1), e, t, 0, 1044, 1377, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                                    n.b("              <img"), n.b("\n" + i), n.b("                "), n.s(n.f("cover_src", e, t, 1), e, t, 0, 1094, 1113, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                                        i.b('src="'), i.b(i.v(i.f("cover_src", e, t, 0))), i.b('"');
+                                    })), e.pop()), n.b("\n" + i), n.b("                "), n.s(n.f("cover_sizes", e, t, 1), e, t, 0, 1160, 1183, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                                        i.b('sizes="'), i.b(i.v(i.f("cover_sizes", e, t, 0))), i.b('"');
+                                    })), e.pop()), n.b(" "), n.b("\n" + i), n.b("                "), n.s(n.f("cover_srcset", e, t, 1), e, t, 0, 1234, 1259, "{{ }}") && (n.rs(e, t, (function(e, t, i) {
+                                        i.b('srcset="'), i.b(i.v(i.f("cover_srcset", e, t, 0))), i.b('"');
+                                    })), e.pop()), n.b(" "), n.b("\n" + i), n.b('                class="rf-mini-profile__project-image js-mini-profile__project-image">'), 
+                                    n.b("\n" + i);
+                                })), e.pop()), n.b("          </a>"), n.b("\n" + i);
+                            })), e.pop()), n.s(n.d(".", e, t, 1), e, t, 1, 0, 0, "") || (n.b('          <div class="rf-mini-profile__project-image-placeholder"></div>'), 
+                            n.b("\n" + i));
+                        })), e.pop()), n.b("    </div>"), n.b("\n" + i);
+                    })), e.pop()), n.b("\n" + i), n.s(n.f("stats", e, t, 1), e, t, 0, 1606, 2272, "{{ }}") && (n.rs(e, t, (function(e, t, n) {
+                        n.b('  <div class="rf-mini-profile__stats">'), n.b("\n" + i), n.b('    <span class="rf-mini-profile__stat rf-mini-profile__stat--appreciations">'), 
+                        n.b("\n" + i), n.b(n.rp("<bestyleguide/_icons/_appreciate2", e, t, "      ")), n.b('      <span class="rf-mini-profile__stat-number"> '), 
+                        n.b(n.v(n.f("appreciations", e, t, 0))), n.b("</span>"), n.b("\n" + i), n.b("    </span>"), 
+                        n.b("\n"), n.b("\n" + i), n.b('    <span class="rf-mini-profile__stat rf-mini-profile__stat--views">'), 
+                        n.b("\n" + i), n.b(n.rp("<bestyleguide/_icons/_views3", e, t, "      ")), n.b('      <span class="rf-mini-profile__stat-number">'), 
+                        n.b(n.v(n.f("views", e, t, 0))), n.b("</span>"), n.b("\n" + i), n.b("    </span>"), 
+                        n.b("\n"), n.b("\n" + i), n.b('    <span class="rf-mini-profile__stat rf-mini-profile__stat--followers">'), 
+                        n.b("\n" + i), n.b(n.rp("<bestyleguide/_icons/_followers4", e, t, "      ")), n.b('      <span class="rf-mini-profile__stat-number">'), 
+                        n.b(n.v(n.f("followers", e, t, 0))), n.b("</span>"), n.b("\n" + i), n.b("    </span>"), 
+                        n.b("\n" + i), n.b("  </div> \x3c!-- .stats-wrap --\x3e"), n.b("\n" + i);
+                    })), e.pop()), n.b("</div> \x3c!-- .mini-profile-wrap --\x3e"), n.b("\n" + i);
+                })), e.pop()), n.fl();
+            },
+            partials: {
+                "<bestyleguide/_avatar0": {
+                    name: "bestyleguide/_avatar",
+                    partials: {},
+                    subs: {
+                        avatarUrl: function(e, t, i, n) {
+                            i.b(i.v(i.f("url", e, t, 0)));
+                        },
+                        src: function(e, t, i, n) {
+                            i.b(i.v(i.d("images.115", e, t, 0)));
+                        },
+                        srcLarge: function(e, t, i, n) {
+                            i.b(i.v(i.d("images.230", e, t, 0)));
+                        }
+                    }
+                },
+                "<lib/_follow/_buttonUserSmall1": {
+                    name: "lib/_follow/_buttonUserSmall",
+                    partials: {},
+                    subs: {}
+                },
+                "<bestyleguide/_icons/_appreciate2": {
+                    name: "bestyleguide/_icons/_appreciate",
+                    partials: {},
+                    subs: {}
+                },
+                "<bestyleguide/_icons/_views3": {
+                    name: "bestyleguide/_icons/_views",
+                    partials: {},
+                    subs: {}
+                },
+                "<bestyleguide/_icons/_followers4": {
+                    name: "bestyleguide/_icons/_followers",
+                    partials: {},
+                    subs: {}
+                }
+            },
+            subs: {}
+        }, '{{#user}}\n<div class="rf-mini-profile hide-phone hide-tablet">\n\n  <div class="rf-mini-profile__user-info-wrap">\n    <div class="rf-mini-profile__user-info-container">\n      {{<bestyleguide/_avatar}}\n        {{$avatarUrl}}{{url}}{{/avatarUrl}}\n        {{$src}}{{images.115}}{{/src}}\n        {{$srcLarge}}{{images.230}}{{/srcLarge}}\n      {{/bestyleguide/_avatar}}\n\n      <div class="rf-mini-profile__user-info">\n        <a target="_blank" href="{{url}}" class="rf-mini-profile__user-name">{{display_name}}</a>\n        <a target="_blank" href="{{location_link}}" class="rf-mini-profile__user-location">{{#city}}{{city}}, {{/city}}{{#state}}{{state}}, {{/state}}{{#country}}{{country}}{{/country}}</a>\n      </div>\n    </div>\n    {{>lib/_follow/_buttonUserSmall}}\n  </div>\n\n  {{#has_latest_projects}}\n    <div class="rf-mini-profile__projects">\n      {{#latest_projects}}\n        {{#.}}\n          <a target="_blank" href="{{url}}" class="rf-mini-profile__project-image-wrapper js-mini-profile__project-image-wrapper">\n            {{#cover_srcset}}\n              <img\n                {{#cover_src}}src="{{cover_src}}"{{/cover_src}}\n                {{#cover_sizes}}sizes="{{cover_sizes}}"{{/cover_sizes}} \n                {{#cover_srcset}}srcset="{{cover_srcset}}"{{/cover_srcset}} \n                class="rf-mini-profile__project-image js-mini-profile__project-image">\n            {{/cover_srcset}}\n          </a>\n        {{/.}}\n        {{^.}}\n          <div class="rf-mini-profile__project-image-placeholder"></div>\n        {{/.}}\n      {{/latest_projects}}\n    </div>\n  {{/has_latest_projects}}\n\n  {{#stats}}\n  <div class="rf-mini-profile__stats">\n    <span class="rf-mini-profile__stat rf-mini-profile__stat--appreciations">\n      {{>bestyleguide/_icons/_appreciate}}\n      <span class="rf-mini-profile__stat-number"> {{appreciations}}</span>\n    </span>\n\n    <span class="rf-mini-profile__stat rf-mini-profile__stat--views">\n      {{>bestyleguide/_icons/_views}}\n      <span class="rf-mini-profile__stat-number">{{views}}</span>\n    </span>\n\n    <span class="rf-mini-profile__stat rf-mini-profile__stat--followers">\n      {{>bestyleguide/_icons/_followers}}\n      <span class="rf-mini-profile__stat-number">{{followers}}</span>\n    </span>\n  </div> \x3c!-- .stats-wrap --\x3e\n  {{/stats}}\n</div> \x3c!-- .mini-profile-wrap --\x3e\n{{/user}}\n', n);
+        o.ri = function(e, t, i) {
+            return n.helpers && e.unshift(n.helpers), this.r(e, (o = r, s = t, Object.keys(s).reduce((function(e, t) {
+                return e[t] = s[t], e;
+            }), o)), i);
+            var o, s;
+        }, e.exports = o.render.bind(o), e.exports.template = o;
+    },
+    FC3S: function(e, t, i) {
+        var n = i("T+Wp");
+        "string" == typeof n && (n = [ [ e.i, n, "" ] ]), n.locals && (e.exports = n.locals);
+        (0, i("DtNa").default)("13e591ee", n, !0, {});
+    },
+    "Qs/F": function(e, t, i) {
+        "use strict";
+        var n = i("FC3S"), r = i.n(n);
+        t.default = r.a;
+    },
+    "T+Wp": function(e, t, i) {
+        (t = e.exports = i("RDo7")(!1)).push([ e.i, ".ProjectPopupLayout-app-3ym {\n  position: relative;\n  z-index: 8;\n}\n.ProjectPopupLayout-app-3ym * {\n    box-sizing: border-box;\n}\n", "" ]), 
+        t.locals = {
+            app: "ProjectPopupLayout-app-3ym"
+        };
+    },
+    YEcI: function(e, t, i) {
+        e.exports = i("ydjK")("YEcI");
+    },
+    "ljy+": function(e, t, i) {
+        "use strict";
+        i.r(t);
+        var n = i("xeH2"), r = i.n(n), o = i("gt27"), s = i("EZKv"), a = (i("1t7P"), i("LW0h"), 
+        i("jwue"), i("daRM"), i("FtHn"), i("+KXO"), i("+oxZ"), i("jKyI")), c = i("SsoK"), l = i("A9Zp"), f = i.n(l), u = i("TYXv");
+        function p(e, t) {
+            var i = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var n = Object.getOwnPropertySymbols(e);
+                t && (n = n.filter((function(t) {
+                    return Object.getOwnPropertyDescriptor(e, t).enumerable;
+                }))), i.push.apply(i, n);
+            }
+            return i;
+        }
+        function b(e, t, i) {
+            return t in e ? Object.defineProperty(e, t, {
+                value: i,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = i, e;
+        }
+        var _, d, m, h = c.default.extend({
+            mustache: f.a,
+            template: function(e) {
+                return e.user && e.user.latest_projects && e.user.latest_projects.forEach(u.c), 
+                this._super(function(e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                        var i = null != arguments[t] ? arguments[t] : {};
+                        t % 2 ? p(Object(i), !0).forEach((function(t) {
+                            b(e, t, i[t]);
+                        })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : p(Object(i)).forEach((function(t) {
+                            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t));
+                        }));
+                    }
+                    return e;
+                }({
+                    classes: [ "hide-tablet", "hide-phone", "js-mini-profile-popup" ]
+                }, e));
+            },
+            position: function() {
+                var e, t, i, n = this._controller.$context.width() / 2, r = this.constructor.NUB_OFFSET - n, o = r < 0 ? "+" : "-";
+                this._super(this._controller.$context, {
+                    my: "left top",
+                    at: "left" + o + Math.abs(r) + " bottom+" + this.constructor.NUB_HEIGHT,
+                    collision: "flipfit",
+                    within: this._model.get("within")
+                }), e = this._controller.$context.offset(), t = this.$view.offset(), this._model.get("bottom") && t.top + this.$view.height() > this._model.get("bottom").offset().top ? (this._super(this._controller.$context, {
+                    my: "left" + o + Math.abs(r) + " bottom-" + this.constructor.NUB_HEIGHT,
+                    at: "left top",
+                    collision: "flipfit none",
+                    within: this._model.get("within")
+                }), i = "bottom") : i = e.top > t.top ? "bottom" : "top", i += Math.floor(e.left) > t.left + Math.abs(r) ? "-right" : "-left", 
+                this.$view.removeClass("top-right top-left bottom-right bottom-left").addClass(i);
+            },
+            rendered: function() {
+                this._super(), a.default.init(this.$view);
+            },
+            show: function() {
+                if (!document.body.contains(this._controller.$context[0])) return this.hide();
+                this.$view && (this.$view.removeClass("hide"), this.position()), this._super();
+            },
+            hide: function() {
+                this._super(), this.destroy();
+            },
+            _bind: r.a.noop,
+            _unbind: r.a.noop
+        }, {
+            NUB_OFFSET: 32,
+            NUB_HEIGHT: 12
+        }), v = s.default.extend({
+            init: function() {
+                this._super.apply(this, arguments), this.listenTo(this._view, {
+                    postrender: function(e) {
+                        this._bindHide(e);
+                    },
+                    hide: function() {
+                        this._unbindHide();
+                    }
+                }), this._keepAlive = this._keepAlive.bind(this), this._setDeath = this._setDeath.bind(this);
+            },
+            _unbindHide: function() {
+                this.$context.off(".miniprofile");
+            },
+            _bindHide: function(e) {
+                e.on({
+                    "mouseenter.miniprofile": this._keepAlive,
+                    "mouseleave.miniprofile": this._setDeath,
+                    "click.miniprofile": this._setDeath
+                });
+            },
+            setContext: function(e) {
+                this.$context = e, this._unbindHide(), this._bindHide(this.$context);
+            },
+            _keepAlive: function() {
+                clearTimeout(this._hideTimeout);
+            },
+            _setDeath: function() {
+                var e = this;
+                this._hideTimeout = setTimeout((function() {
+                    e._view && (e._view.hide(), e.trigger("closed"));
+                }), this.constructor.HIDE_TIMEOUT);
+            }
+        }, {
+            VIEW_CLASS: h,
+            HIDE_TIMEOUT: 500
+        });
+        function g(e) {
+            return Object(o.default)({
+                url: "/v2/users/" + e,
+                type: "get",
+                data: {
+                    format: "mini",
+                    client_id: window.adobeid.client_id
+                }
+            });
+        }
+        function y(e, t) {
+            var i = new v(t);
+            e.parents(".popup").length ? (t.within = r()(window), t.bottom = null) : (t.within = d, 
+            t.bottom = _), e.data("hasMiniProfile", !0), i.setContext(e), i.render(e), e.trigger("miniprofile-rendered"), 
+            i._view.show(), i.on("closed", (function() {
+                e.data("hasMiniProfile", !1), i.destroy();
+            }));
+        }
+        t.default = {
+            init: function() {
+                var e, t, i = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r()(document.body), n = arguments.length > 1 ? arguments[1] : void 0, o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : r()(".js-footer"), s = i instanceof r.a ? i : r()(i);
+                d = n || r()(window), _ = o, s.on("mouseenter", ".js-mini-profile", (function() {
+                    var i = r()(this);
+                    i.data("hasMiniProfile") || (e = i.data("id"), clearTimeout(m), m = setTimeout((function() {
+                        i.addClass("wait"), (t = g(e)).then((function(e) {
+                            i.removeClass("wait"), y(i, e), t = null;
+                        }), (function() {
+                            i.removeClass("wait");
+                        }));
+                    }), 500));
+                })).on("mouseleave", ".js-mini-profile", (function() {
+                    clearTimeout(m), t && (t.reject(), t = null, s.data("hasMiniProfile", !1));
+                }));
+            },
+            destroy: function(e) {
+                clearTimeout(m), (e = e || r()(document.body)).off("mouseenter mouseleave", ".js-mini-profile");
+            },
+            loadUser: g,
+            popUpDelay: 500
+        };
+    },
+    xSTA: function(e, t, i) {
+        "use strict";
+        i("1t7P"), i("jQ/y"), i("aLgo"), i("LW0h"), i("hBpG"), i("jwue"), i("hCOa"), i("lTEL"), 
+        i("daRM"), i("FtHn"), i("+KXO"), i("7x/C"), i("JtPf"), i("KqXw"), i("DZ+c"), i("87if"), 
+        i("LJOr"), i("+oxZ"), i("kYxP"), i("3yYM");
+        var n, r, o = i("xeH2"), s = i.n(o), a = i("YEcI"), c = i.n(a), l = i("S7Gn"), f = i.n(l), u = i("7bzM"), p = i.n(u), b = i("nE2t"), _ = (i("ho0z"), 
+        i("D57K")), d = "POPUP_OPENED", m = "SET_PROJECTS", h = "SET_TRACKING_SOURCE", v = "SET_BASE_PAGE_URL", g = "SET_IS_FROM_PROFILE", y = {
+            namespaced: !0,
+            state: function() {
+                return {
+                    projects: [],
+                    trackingSource: "",
+                    backgroundPageUrl: "",
+                    isFromProfile: !1
+                };
+            },
+            actions: (n = {}, n[d] = function(e, t) {
+                var i = e.commit, n = t.entities, r = t.trackingSource, o = t.backgroundPageUrl, s = t.isFromProfile;
+                return Object(_.__awaiter)(this, void 0, void 0, (function() {
+                    return Object(_.__generator)(this, (function(e) {
+                        return i(v, o), i(m, n), i(h, r), i(g, s), [ 2 ];
+                    }));
+                }));
+            }, n),
+            mutations: (r = {}, r[v] = function(e, t) {
+                e.backgroundPageUrl = t;
+            }, r[m] = function(e, t) {
+                e.projects = t;
+            }, r[h] = function(e, t) {
+                e.trackingSource = t;
+            }, r[g] = function(e, t) {
+                e.isFromProfile = t;
+            }, r)
+        }, w = function(e) {
+            return /^project/.test(e.name);
+        }, j = {
+            watch: {
+                $route: function(e, t) {
+                    !w(e) || w(t) ? !w(e) && w(t) && this.$emit("close") : this.$emit("open");
+                }
+            },
+            beforeCreate: function() {
+                this.$store.registerModule("layout", y);
+            },
+            beforeDestroy: function() {
+                this.$store.unregisterModule("layout");
+            }
+        }, O = i("Qs/F"), P = i("K+aO");
+        var E = Object(P.default)(j, (function() {
+            var e = this, t = e.$createElement, i = e._self._c || t;
+            return i("div", {
+                class: [ e.$style.app, "e2e-ProjectPopupLayout-popup" ]
+            }, [ i("router-view") ], 1);
+        }), [], !1, (function(e) {
+            this.$style = O.default.locals || O.default;
+        }), null, null).exports, k = i("mGku"), S = i("nOR9"), x = i("Xyui"), T = i("zwf+"), U = i("4GaP"), $ = i("VORa"), D = i("bIE6"), H = i("L0wf"), I = i("H8sf"), L = i.n(I), F = i("b5PP"), A = i.n(F), C = i("tLj1"), K = i("aEzW"), M = i("Khhm");
+        function z(e, t, i, n, r, o, s) {
+            try {
+                var a = e[o](s), c = a.value;
+            } catch (e) {
+                return void i(e);
+            }
+            a.done ? t(c) : Promise.resolve(c).then(n, r);
+        }
+        function R(e) {
+            return function() {
+                var t = this, i = arguments;
+                return new Promise((function(n, r) {
+                    var o = e.apply(t, i);
+                    function s(e) {
+                        z(o, n, r, s, a, "next", e);
+                    }
+                    function a(e) {
+                        z(o, n, r, s, a, "throw", e);
+                    }
+                    s(void 0);
+                }));
+            };
+        }
+        function N(e) {
+            return function(e) {
+                if (Array.isArray(e)) {
+                    for (var t = 0, i = new Array(e.length); t < e.length; t++) i[t] = e[t];
+                    return i;
+                }
+            }(e) || function(e) {
+                if (Symbol.iterator in Object(e) || "[object Arguments]" === Object.prototype.toString.call(e)) return Array.from(e);
+            }(e) || function() {
+                throw new TypeError("Invalid attempt to spread non-iterable instance");
+            }();
+        }
+        function G(e, t) {
+            var i = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var n = Object.getOwnPropertySymbols(e);
+                t && (n = n.filter((function(t) {
+                    return Object.getOwnPropertyDescriptor(e, t).enumerable;
+                }))), i.push.apply(i, n);
+            }
+            return i;
+        }
+        function B(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var i = null != arguments[t] ? arguments[t] : {};
+                t % 2 ? G(Object(i), !0).forEach((function(t) {
+                    Z(e, t, i[t]);
+                })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i)) : G(Object(i)).forEach((function(t) {
+                    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(i, t));
+                }));
+            }
+            return e;
+        }
+        function Z(e, t, i) {
+            return t in e ? Object.defineProperty(e, t, {
+                value: i,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = i, e;
+        }
+        var Y = ".js-project-cover-title-link, .js-project-comment-link, .js-project-cover-image-link, .js-project-sibling-link, .js-project-cover-stats-link, .js-project-promote";
+        t.a = B({
+            init: function() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = e.env, i = void 0 === t ? {} : t, n = e.gates, r = void 0 === n ? {} : n, o = e.config, s = void 0 === o ? {} : o, a = e.loggedInUser, c = void 0 === a ? {} : a, l = e.projectEntities, f = void 0 === l ? [] : l, u = e.trackingSource, p = void 0 === u ? "" : u, b = e.backgroundPageUrl, _ = void 0 === b ? "" : b, d = e.isFromProfile, m = void 0 !== d && d;
+                return this._initPopup({
+                    gates: r,
+                    config: s,
+                    loggedInUser: c,
+                    env: i
+                }), this.projectEntities = f, this.trackingSource = p, this.backgroundPageUrl = _, 
+                this.isFromProfile = m, this._turnOnEventHandlers(), this.vm;
+            },
+            _turnOnEventHandlers: function() {
+                var e = this;
+                this.vm && (this.maybePushState = this.maybePushState.bind(this), s()(document.body).on("click.project-popup", Y, (function(t) {
+                    return e.maybePushState(t);
+                })));
+            },
+            _turnOffEventHandlers: function() {
+                this.vm && s()(document.body).off("click.project-popup");
+            },
+            updateProjectEntities: function() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
+                this.projectEntities = e;
+            },
+            setBackgroundPageUrl: function(e) {
+                this.backgroundPageUrl = e;
+            },
+            _initPopup: function(e) {
+                var t = this, i = e.gates, n = e.config, r = e.loggedInUser, o = e.env;
+                k.default.use(S.default), k.default.use(x.a), k.default.use(A.a), k.default.use(K.a);
+                var s = new S.default.Store({
+                    modules: {
+                        translation: T.default,
+                        user: U.default,
+                        error: $.b,
+                        env: M.a
+                    }
+                }), a = {
+                    config: n,
+                    gates: i,
+                    user: {
+                        loggedInUser: r
+                    },
+                    env: o
+                };
+                s.replaceState(L()({}, s.state, a)), Object(D.default)(k.default).setLocalization(s, a.config.LOCALIZATION);
+                var c = new x.a({
+                    mode: "history",
+                    routes: N(Object(H.d)(s))
+                });
+                c.afterEach((function(e) {
+                    e.matched.length && C.default.pageView("gallery:popup");
+                })), this.vm = new k.default(B({}, E, {
+                    router: c,
+                    store: s
+                })), this.vm.$on("open", R(regeneratorRuntime.mark((function e() {
+                    return regeneratorRuntime.wrap((function(e) {
+                        for (;;) switch (e.prev = e.next) {
+                          case 0:
+                            return e.next = 2, t.vm.$store.dispatch("layout/" + d, {
+                                entities: t.projectEntities,
+                                trackingSource: t.trackingSource,
+                                backgroundPageUrl: t.backgroundPageUrl,
+                                isFromProfile: t.isFromProfile
+                            });
+
+                          case 2:
+                            t.vm.$emit("entitiesSet");
+
+                          case 3:
+                          case "end":
+                            return e.stop();
+                        }
+                    }), e);
+                })))), this.vm.$mount(document.querySelector(".js-vue-project-view-mount"));
+            },
+            maybePushState: function(e) {
+                var t = e.button, i = e.altKey, n = e.ctrlKey, r = e.metaKey, o = e.shiftKey, s = e.currentTarget;
+                if (p.a.is("desktop") && !c()("touch") && !(0 !== t || i || n || r || o)) {
+                    var a = s.href;
+                    b.default.getLocation("href") !== a && (e.preventDefault(), this.pushState(e));
+                }
+            },
+            pushState: function(e) {
+                this.vm.$router.push({
+                    path: "" + e.currentTarget.pathname + e.currentTarget.search
+                });
+            },
+            pause: function() {
+                this._turnOffEventHandlers();
+            },
+            unpause: function() {
+                this._turnOnEventHandlers();
+            },
+            forceLinksToOpenNewTab: function() {
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : document.body;
+                s()(e).find(Y).attr("target", "_blank");
+            },
+            destroy: function() {
+                this.vm && (this.vm.$destroy(), this.vm = null), this.off(), s()(window).off("popstate.project-popup"), 
+                this._turnOffEventHandlers();
+            }
+        }, f.a);
+    }
+} ]);
+//# sourceMappingURL=Search.vue.71a4331024d79b1eae8e.js.map

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboardgrid.css">
+</head>
+<body>
+     
+
+     
+     
+    <main  class="dashboard-main">
+        <div class="main-left">
+            <h3>DASHBOARD</h3>
+            <ul>
+                <li>My Account</li>
+                <li>Up Coming Promo</li>
+                <li>Connect with Us</li>
+                <li>Become a partner</li>
+            </ul>
+            <img src="images/leftimage.png" alt="">
+        </div>
+        <div class="main-center">
+            <div class="center-1"> 
+                <h3 class="dashboard-word">DASHBOARD</h3>
+            </div>
+            <div class="center-2">
+                <div class="top">
+                <p class="center-2-writeup">today you have a new feature in <br>
+                    our app. you can download the latest <br>
+                    version. <br>
+                </p>
+                <button class="dashboard-btn">Read more</button>
+                </div>
+                <div class="center-image"><img src="images/dashboardImage.png" alt=""></div>
+            </div>
+
+            <div class="center-3">
+                <form action="">
+                    <input class="input-dashboard" type="text" id="email" name="fname" placeholder="Enter Your location"><br> <br>
+                    <input class="input-dashboard" type="text"  name="fname" placeholder="Car hiring periods (days)" id="days"><br> <br>
+                    <select  class="input-dashboard" name="" id="">
+                        <option value=""> --Select Car--</option>
+                        <option value="toyota"> Toyota</option>
+                        <option value="hummerBus"> Hummer Bus</option>
+                        <option value="mercedes"> Mercedes</option>
+                        <option value="honda"> Honda</option>
+                        <option value="acura"> Acura</option>
+
+                       </select> <br> <br>
+
+
+                       
+                       
+                       
+
+                    <input class="input-dashboard submit" type="submit" id="email" name="fname" ><br> <br>
+                </form>
+                 
+            </div>
+        </div>
+        <div class="main-right2"> 
+            <div class="empty"></div>
+            <div class="result">Your car is <br> <br>
+                <h5>you have not selected car yet.</h5> <br>
+                <p> Price: <span id="price"></span> </p>
+                <p>Model: <span id="model"> </span></p>
+               <p>Color:  <span id="color"></span> </p>
+               <p>Total price:  <span id="total"></span> </p>
+
+                
+                
+                <div class="result-image"> <img id="image-result" src="images/result-image.png" alt=""></div>
+                <p>Arrival in 30mins</p>
+            </div>
+        </div>
+
+    </main>
+     
+     
+
+</body>
+<!-- 
+<script>
+    const users = JSON.parse(window.localStorage.getItem('user'))
+    
+    document.getElementById('firstName').innerHTML = users.firstName + ', welcome home';
+    
+
+     
+    </script> 
+-->
+
+<script src="app2.js"></script>
+
+
+</html>

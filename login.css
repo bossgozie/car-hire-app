@@ -1,0 +1,28 @@
+body{
+    display: grid;
+    grid-template-columns:  1fr 10fr 1fr;
+}
+main{
+     display: grid;
+     grid-template-columns:10px 1fr   1fr 20px;
+    grid-column: 2;
+
+}
+
+
+.main-left{
+    grid-column: 2;
+
+}
+
+.main-right{
+grid-column: 3;
+
+}
+
+
+
+
+
+
+
